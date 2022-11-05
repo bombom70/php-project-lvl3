@@ -1,3 +1,2 @@
-PORT:=8000
 start:
-	php -S 0.0.0.0:$(PORT) -t public
+	php -S 0.0.0.0:${PORT:-8000} -t public
